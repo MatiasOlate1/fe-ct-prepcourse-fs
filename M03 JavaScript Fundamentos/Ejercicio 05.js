@@ -12,7 +12,8 @@ function esPositivo(num) {
    return "Es positivo"
    else if (num < 0)
    return "Es negativo"
-   else false
+   else (num == 0)
+   return false
 }
 
 function agregarSimboloExclamacion(str) {
@@ -69,11 +70,29 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
- /*if letra = esVocal
-return "Es vocal"
-else
-return "Dato incorrecto" */
+  // if (  letra === "a" || "A" || "e" || "E" || "i" || "I" || "o" || "O" || "u" || "U")
 
+  if (letra === "a" || letra === "A" || letra === "e" || letra === "E" || letra === "i" || letra === "I" || letra === "o" || letra === "O" || letra === "u" || letra === "U")
+
+  return "Es vocal";
+   else if (letra.lenght > 1)
+   return "Dato incorrecto";
+
+   else return "Dato incorrecto";
+  /*
+   if letra = 'a'
+      return "Es vocal"
+   else if letra = 'b'
+      return "Es vocal"
+   else if letra = 'c'
+      return "Es vocal"
+   else if letra = 'd'
+      return "Es vocal"
+   else if letra = 'e'
+   return "Es vocal"
+   else
+         return "Dato incorrecto"
+  */
 
 }
 
